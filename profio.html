@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body style="background-color: powderblue;">
+  <nav id="desktop-nav">
+    <div class="logo" id="home">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">My Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="IMG_20230905_224025.jpg" alt="Umar profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section_i">Hello, I'm</p>
+      <h1 class="title">Mahammad Umar</h1>
+      <p class="section_text_p2">Aspiring Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container"></div>
+      <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/umar-mahammad-134b2226b'">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="My Github profile" class="icon" onclick="location.href='http://github.com/umar0569'">
+      </div>
+    
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="text-container">
+      <p>
+        I am M.Umar, a B.Tech Computer Science and Engineering student at NBKR Institute of Science & Technology (NBKRIST). My passion lies in web development, where I have built a solid foundation in HTML, CSS, and JavaScript.
+      </p>
+    </div>
+  </section>
+  <section id="skills">
+    <p class="section_text_p1">Down here !!</p>
+    <h1 class="title">My Skills</h1>
+    <div class="text-container">
+      <p>
+        <h4>Skills and Learning</h4>
+        HTML: Structured, semantic web pages<br>
+        CSS: Responsive designs with Flexbox and Grid<br>
+        JavaScript: Basic interactivity and DOM manipulation Projects<br>
+        Basic programming knowledge in Python,C,Java and MySql.
+        <h4>Future Goals</h4>
+        I aim to become a full-stack web developer, learning advanced JavaScript, frameworks like React.js and Node.js, and backend technologies. Continuous learning through online courses and coding communities is a priority for me.
+        I have created static web pages and simple interactive applications, experimenting with CSS frameworks and JavaScript libraries.
+        
+      </p>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="" alt="" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/umar0569/portfolio'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/umar0569/portfolio'">Demo</button>
+        </div>
+      
+      
+        
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="">
+        </div>
+        <h2 class="experience-sub-title project-title">Random</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/umar0569/random'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/umar0569/random'">Demo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resume">
+    <h1 class="title">My Resume</h1>
+    <p class="section_text_p1">Download here !!</p>
+    <button class="download"><a href="C:\Users\nbkr\Downloads\portfolio-main (1)\portfolio-main\UMAR_RESUME.pdf">Download</a></button>
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:umarfarooq0569@gmail.com">umarfarooq0569@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-linkedin-square"></i>
+        <p><a href="https://www.linkedin.com/in/umar-mahammad-134b2226b">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-brands fa-instagram"></i>
+        <p><a href="https://www.instagram.com/umar_farooq9347?igsh=MXFkbTl4eWF6ZXA1bQ==">Instagram</a></p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa fa-phone"></i>
+        <p>9347191353</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; 2024 Umar. All Rights Reserved.</p>
+  </footer>
+  <script src="scri.js"></script>
+</body>
+</html>
